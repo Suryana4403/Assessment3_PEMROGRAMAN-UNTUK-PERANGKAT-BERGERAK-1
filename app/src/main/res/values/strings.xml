@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Assessment1</string>
+    <string name="textHitungLuasPersegi">HITUNG LUAS DAN KELILING PANJANG PERSEGI</string>
+    <string name="masukanPanjang">Panjang (cm)</string>
+    <string name="masukanLebar">Lebar (cm)</string>
+    <string name="hitung">Hitung</string>
+    <string name="reset">Reset</string>
+    <string name="panjang_invalid">Berat tidak boleh kosong.</string>
+    <string name="lebar_invalid">Tinggi tidak boleh kosong.</string>
+    <string name="keliling_x">Keliling: %1$s cm</string>
+    <string name="luas_x">Luas: %1$s cm2</string>
+</resources>

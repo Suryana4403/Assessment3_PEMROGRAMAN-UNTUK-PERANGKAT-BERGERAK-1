@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textHitungLuasPersegi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/textHitungLuasPersegi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/masukanPanjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/masukanPanjang"
+        app:layout_constraintBottom_toBottomOf="@+id/valuePanjang"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/valuePanjang" />
+
+    <EditText
+        android:id="@+id/valuePanjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/masukanPanjang"
+        app:layout_constraintTop_toBottomOf="@+id/textHitungLuasPersegi" />
+
+    <TextView
+        android:id="@+id/masukanLebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/masukanLebar"
+        app:layout_constraintBottom_toBottomOf="@+id/valueLebar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/valueLebar" />
+
+    <EditText
+        android:id="@+id/valueLebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/valuePanjang"
+        app:layout_constraintStart_toStartOf="@+id/valuePanjang"
+        app:layout_constraintTop_toBottomOf="@+id/valuePanjang" />
+
+    <Button
+        android:id="@+id/hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/hitung"
+        app:layout_constraintStart_toStartOf="@+id/valueLebar"
+        app:layout_constraintTop_toBottomOf="@+id/luas" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/hitung"
+        app:layout_constraintEnd_toEndOf="@+id/valueLebar"
+        app:layout_constraintStart_toEndOf="@+id/hitung"
+        app:layout_constraintTop_toTopOf="@+id/hitung" />
+
+    <TextView
+        android:id="@+id/keliling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Keliling = "
+        app:layout_constraintStart_toStartOf="@+id/valueLebar"
+        app:layout_constraintTop_toBottomOf="@+id/valueLebar" />
+
+    <TextView
+        android:id="@+id/luas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Luas ="
+        app:layout_constraintStart_toStartOf="@+id/keliling"
+        app:layout_constraintTop_toBottomOf="@+id/keliling" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
