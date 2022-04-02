@@ -5,10 +5,8 @@
     <string name="masukanLebar">Lebar (cm)</string>
     <string name="hitung">Hitung</string>
     <string name="reset">Reset</string>
-    <string name="panjang_invalid">Berat tidak boleh kosong.</string>
-    <string name="lebar_invalid">Tinggi tidak boleh kosong.</string>
-    <string name="keliling_x">Keliling: %1$s cm</string>
-    <string name="luas_x">Luas: %1$s cm2</string>
-    <string name="keliling">"Hasil Keliling = "</string>
-    <string name="luas">Hasil Luas =</string>
+    <string name="panjang_invalid">Panjang tidak boleh kosong.</string>
+    <string name="lebar_invalid">Lebar tidak boleh kosong.</string>
+    <string name="keliling_x">Hasil Keliling = %1$s cm</string>
+    <string name="luas_x">Hasil Luas = %1$s cm2</string>
 </resources>

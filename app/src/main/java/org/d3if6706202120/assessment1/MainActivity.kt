@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.hitung.setOnClickListener { hitung() }
+        binding.reset.setOnClickListener { reset() }
 
     }
 
@@ -36,5 +37,12 @@ class MainActivity : AppCompatActivity() {
         val luas = panjang.toInt() * lebar.toInt()
         binding.keliling.text = getString(R.string.keliling_x, keliling)
         binding.luas.text = getString(R.string.luas_x, luas)
+    }
+
+    private fun reset() {
+        binding.valuePanjang.text = (null)
+        binding.valueLebar.text = (null)
+        binding.keliling.text = "Hasil Keliling ="
+        binding.luas.text = "Hasil Luas ="
     }
 }
