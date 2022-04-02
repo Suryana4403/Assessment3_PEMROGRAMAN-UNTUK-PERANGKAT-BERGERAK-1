@@ -9,4 +9,6 @@
     <string name="lebar_invalid">Tinggi tidak boleh kosong.</string>
     <string name="keliling_x">Keliling: %1$s cm</string>
     <string name="luas_x">Luas: %1$s cm2</string>
+    <string name="keliling">"Hasil Keliling = "</string>
+    <string name="luas">Hasil Luas =</string>
 </resources>
