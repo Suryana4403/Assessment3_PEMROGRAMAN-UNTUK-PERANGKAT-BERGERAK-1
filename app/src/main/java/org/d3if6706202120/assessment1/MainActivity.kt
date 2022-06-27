@@ -2,47 +2,23 @@ package org.d3if6706202120.assessment1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
-import android.widget.Toast
-import org.d3if6706202120.assessment1.databinding.ActivityMainBinding
+import androidx.navigation.NavController
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+
+    private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        binding.hitung.setOnClickListener { hitung() }
-        binding.reset.setOnClickListener { reset() }
-
+        navController = findNavController(R.id.myNavHostFragment)
+        NavigationUI.setupActionBarWithNavController(this, navController)
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp()
     }
 
-    private fun hitung() {
-        val panjang = binding.valuePanjang.text.toString()
-        if (TextUtils.isEmpty(panjang)) {
-            Toast.makeText(this, R.string.panjang_invalid, Toast.LENGTH_LONG).show()
-            return
-        }
-        val lebar = binding.valueLebar.text.toString()
-        if (TextUtils.isEmpty(lebar)) {
-            Toast.makeText(this, R.string.lebar_invalid, Toast.LENGTH_LONG).show()
-            return
-        }
-
-        val keliling = (2 * (panjang.toInt() + lebar.toInt()))
-        val luas = panjang.toInt() * lebar.toInt()
-        binding.keliling.text = getString(R.string.keliling_x, keliling)
-        binding.luas.text = getString(R.string.luas_x, luas)
-    }
-
-    private fun reset() {
-        binding.valuePanjang.text = (null)
-        binding.valueLebar.text = (null)
-        binding.keliling.text = "Hasil Keliling ="
-        binding.luas.text = "Hasil Luas ="
-    }
 }

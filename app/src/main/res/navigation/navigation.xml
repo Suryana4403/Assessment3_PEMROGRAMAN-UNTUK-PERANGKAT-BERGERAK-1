@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/persegiPanjangFragment">
+
+    <fragment
+        android:id="@+id/persegiPanjangFragment"
+        android:name="org.d3if6706202120.assessment1.ui.PersegiPanjangFragment"
+        android:label="Hitung Persegi Panjang"
+        tools:layout="@layout/fragment_persegipanjang" >
+        <action
+            android:id="@+id/action_persegiPanjangFragment_to_rumusPersegiPanjangFragment"
+            app:destination="@id/rumusPersegiPanjangFragment" />
+        <action
+            android:id="@+id/action_persegiPanjangFragment_to_aboutPersegiPanjangFragment"
+            app:destination="@id/aboutPersegiPanjangFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rumusPersegiPanjangFragment"
+        android:name="org.d3if6706202120.assessment1.ui.RumusPersegiPanjangFragment"
+        android:label="Rumus Persegi Panjang"
+        tools:layout="@layout/fragment_rumus_persegipanjang"/>
+    <fragment
+        android:id="@+id/aboutPersegiPanjangFragment"
+        android:name="org.d3if6706202120.assessment1.ui.AboutPersegiPanjangFragment"
+        android:label="Tentang Persegi Panjang"
+        tools:layout="@layout/fragment_about_persegipanjang"/>
+
+</navigation>

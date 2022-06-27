@@ -11,7 +11,8 @@
         android:theme="@style/Theme.Assessment1">
         <activity
             android:name=".MainActivity"
-            android:windowSoftInputMode="stateHidden">>
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

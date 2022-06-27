@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Assessment1</string>
-    <string name="textHitungLuasPersegi">HITUNG LUAS DAN KELILING PANJANG PERSEGI</string>
+    <string name="textHitungLuasPersegi">HITUNG LUAS DAN KELILING PERSEGI PANJANG</string>
     <string name="masukanPanjang">Panjang (cm)</string>
     <string name="masukanLebar">Lebar (cm)</string>
     <string name="hitung">Hitung</string>
@@ -9,4 +9,12 @@
     <string name="lebar_invalid">Lebar tidak boleh kosong.</string>
     <string name="keliling_x">Hasil Keliling = %1$s cm</string>
     <string name="luas_x">Hasil Luas = %1$s cm2</string>
+    <string name="rumus_persegipanjang">RUMUS PERSEGI PANJANG</string>
+    <string name="rumus_keliling">Keliling = 2 x (p + l)</string>
+    <string name="rumus_luas">Luas = p x l</string>
+    <string name="lihat_rumus_persegipanjang">Lihat Rumus</string>
+    <string name="bagikan">Bagikan</string>
+    <string name="bagikan_template">Panjang: %1$s cm\nLebar: %2$s cm\n\n%3$s\n%4$s</string>
+    <string name="tentangpersegipanjang">Persegi panjang (bahasa Inggris: rectangle) adalah bangun datar dua dimensi yang dibentuk oleh dua pasang sisi yang masing-masing sama panjang dan sejajar dengan pasangannya, dan memiliki empat buah sudut yang kesemuanya adalah sudut siku-siku.. Persegi panjang merupakan turunan dari segi empat yang mempunyai ciri khusus dua sisi sejajar sama panjang dan keempat sudutnya siku-siku (90°).</string>
+    <string name="tentang_persegipanjang">Tentang Persegi Panjang</string>
 </resources>
