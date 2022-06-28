@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/persegiPanjangFragment"
-        android:name="org.d3if6706202120.assessment1.ui.PersegiPanjangFragment"
+        android:name="org.d3if6706202120.assessment1.ui.persegi_panjang.PersegiPanjangFragment"
         android:label="Hitung Persegi Panjang"
         tools:layout="@layout/fragment_persegipanjang" >
         <action
@@ -17,6 +17,9 @@
         <action
             android:id="@+id/action_persegiPanjangFragment_to_aboutPersegiPanjangFragment"
             app:destination="@id/aboutPersegiPanjangFragment" />
+        <action
+            android:id="@+id/action_persegiPanjangFragment_to_historiFragmentPersegiPanjang"
+            app:destination="@id/historiPersegiPanjangFragment" />
     </fragment>
     <fragment
         android:id="@+id/rumusPersegiPanjangFragment"
@@ -28,5 +31,11 @@
         android:name="org.d3if6706202120.assessment1.ui.AboutPersegiPanjangFragment"
         android:label="Tentang Persegi Panjang"
         tools:layout="@layout/fragment_about_persegipanjang"/>
+    <fragment
+        android:id="@+id/historiPersegiPanjangFragment"
+        android:name="org.d3if6706202120.assessment1.ui.histori.HistoriPersegiPanjangFragment"
+        android:label="Histori Hitung Persegi Panjang"
+        tools:layout="@layout/fragment_histori_persegipanjang" />
+
 
 </navigation>

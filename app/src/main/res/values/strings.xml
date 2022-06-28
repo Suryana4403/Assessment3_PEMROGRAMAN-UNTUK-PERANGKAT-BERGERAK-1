@@ -17,4 +17,13 @@
     <string name="bagikan_template">Panjang: %1$s cm\nLebar: %2$s cm\n\n%3$s\n%4$s</string>
     <string name="tentangpersegipanjang">Persegi panjang (bahasa Inggris: rectangle) adalah bangun datar dua dimensi yang dibentuk oleh dua pasang sisi yang masing-masing sama panjang dan sejajar dengan pasangannya, dan memiliki empat buah sudut yang kesemuanya adalah sudut siku-siku.. Persegi panjang merupakan turunan dari segi empat yang mempunyai ciri khusus dua sisi sejajar sama panjang dan keempat sudutnya siku-siku (90°).</string>
     <string name="tentang_persegipanjang">Tentang Persegi Panjang</string>
+    <string name="belum_ada_data">Belum ada data</string>
+    <string name="histori">Histori</string>
+    <string name="luasx">Luas : %1$s cm2</string>
+    <string name="kelilingx">Keliling : %1$s cm</string>
+    <string name="datax">Panjang: %1$s cm- Lebar: %2$s cm</string>
+    <string name="hapus_histori">Hapus Histori</string>
+    <string name="konfirmasi_hapus">Hapus semua histori?</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
 </resources>

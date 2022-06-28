@@ -1,4 +1,4 @@
-package org.d3if6706202120.assessment1.ui
+package org.d3if6706202120.assessment1.ui.persegi_panjang
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,13 +11,17 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import org.d3if6706202120.assessment1.R
 import org.d3if6706202120.assessment1.databinding.FragmentPersegipanjangBinding
+import org.d3if6706202120.assessment1.db.PersegiPanjangDb
 import org.d3if6706202120.assessment1.model.HasilPersegiPanjang
 
 class PersegiPanjangFragment : Fragment() {
     private lateinit var binding: FragmentPersegipanjangBinding
 
-    private val viewModel: MainViewModel by lazy {
-        ViewModelProvider(requireActivity())[MainViewModel::class.java]
+    private val viewModel: PersegiPanjangViewModel by lazy {
+        val db = PersegiPanjangDb.getInstance(requireContext())
+        val factory = PersegiPanjangViewModelFactory(db.dao)
+
+        ViewModelProvider(this, factory)[PersegiPanjangViewModel::class.java]
 
     }
 
@@ -45,10 +49,19 @@ class PersegiPanjangFragment : Fragment() {
         inflater.inflate(R.menu.option_menu, menu)
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.menu_about) {
-            findNavController().navigate(
-                R.id.action_persegiPanjangFragment_to_aboutPersegiPanjangFragment)
-            return true
+        when(item.itemId) {
+            R.id.menu_histori -> {
+                findNavController().navigate(
+                R.id.action_persegiPanjangFragment_to_historiFragmentPersegiPanjang
+                )
+                return true
+            }
+            R.id.menu_about -> {
+                findNavController().navigate(
+                    R.id.action_persegiPanjangFragment_to_aboutPersegiPanjangFragment
+                )
+                return true
+            }
         }
         return super.onOptionsItemSelected(item)
     }
