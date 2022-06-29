@@ -1,4 +1,4 @@
-package org.d3if6706202120.assessment1.model
+package org.d3if6706202120.assessment1.model.persegi_panjang
 
 
 import org.d3if6706202120.assessment1.db.PersegiPanjangEntity

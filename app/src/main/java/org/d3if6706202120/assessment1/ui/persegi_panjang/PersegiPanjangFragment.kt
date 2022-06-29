@@ -12,7 +12,7 @@ import androidx.navigation.fragment.findNavController
 import org.d3if6706202120.assessment1.R
 import org.d3if6706202120.assessment1.databinding.FragmentPersegipanjangBinding
 import org.d3if6706202120.assessment1.db.PersegiPanjangDb
-import org.d3if6706202120.assessment1.model.HasilPersegiPanjang
+import org.d3if6706202120.assessment1.model.persegi_panjang.HasilPersegiPanjang
 
 class PersegiPanjangFragment : Fragment() {
     private lateinit var binding: FragmentPersegipanjangBinding

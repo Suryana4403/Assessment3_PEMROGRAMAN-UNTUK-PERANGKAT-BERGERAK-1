@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/persegiPanjangFragment">
+    app:startDestination="@id/bangunDatarFragment">
 
     <fragment
         android:id="@+id/persegiPanjangFragment"
@@ -36,6 +36,11 @@
         android:name="org.d3if6706202120.assessment1.ui.histori.HistoriPersegiPanjangFragment"
         android:label="Histori Hitung Persegi Panjang"
         tools:layout="@layout/fragment_histori_persegipanjang" />
+    <fragment
+        android:id="@+id/bangunDatarFragment"
+        android:name="org.d3if6706202120.assessment1.ui.main.BangunDatarFragment"
+        android:label="fragment_bangundatar"
+        tools:layout="@layout/fragment_bangundatar" />
 
 
 </navigation>

@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import org.d3if6706202120.assessment1.R
 import org.d3if6706202120.assessment1.databinding.ItemHistoriBinding
 import org.d3if6706202120.assessment1.db.PersegiPanjangEntity
-import org.d3if6706202120.assessment1.model.hitungPersegiPanjang
+import org.d3if6706202120.assessment1.model.persegi_panjang.hitungPersegiPanjang
 import java.text.SimpleDateFormat
 import java.util.*
 

@@ -9,8 +9,8 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.d3if6706202120.assessment1.db.PersegiPanjangDao
 import org.d3if6706202120.assessment1.db.PersegiPanjangEntity
-import org.d3if6706202120.assessment1.model.HasilPersegiPanjang
-import org.d3if6706202120.assessment1.model.hitungPersegiPanjang
+import org.d3if6706202120.assessment1.model.persegi_panjang.HasilPersegiPanjang
+import org.d3if6706202120.assessment1.model.persegi_panjang.hitungPersegiPanjang
 
 
 class PersegiPanjangViewModel(private val db: PersegiPanjangDao) : ViewModel() {

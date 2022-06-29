@@ -30,8 +30,7 @@ class HistoriPersegiPanjangFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        binding = FragmentHistoriPersegipanjangBinding.inflate(layoutInflater,
-            container, false)
+        binding = FragmentHistoriPersegipanjangBinding.inflate(layoutInflater, container, false)
         setHasOptionsMenu(true)
         return binding.root
     }
