@@ -39,8 +39,12 @@
     <fragment
         android:id="@+id/bangunDatarFragment"
         android:name="org.d3if6706202120.assessment1.ui.main.BangunDatarFragment"
-        android:label="fragment_bangundatar"
-        tools:layout="@layout/fragment_bangundatar" />
+        android:label="Bangun Datar"
+        tools:layout="@layout/fragment_bangundatar" >
+        <action
+            android:id="@+id/action_bangunDatarFragment_to_persegiPanjangFragment"
+            app:destination="@id/persegiPanjangFragment" />
+    </fragment>
 
 
 </navigation>
