@@ -20,11 +20,7 @@ import org.d3if6706202120.assessment1.network.ApiStatus
 
 
 class BangunDatarFragment : Fragment() {
-
-    companion object {
-        const val CHANNEL_ID = "updater"
-    }
-
+    
     private val viewModel: BangunDatarMainViewModel by lazy {
         ViewModelProvider(this).get(BangunDatarMainViewModel::class.java)
     }
@@ -44,14 +40,7 @@ class BangunDatarFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val name = getString(R.string.channel_name)
-            val importance = NotificationManager.IMPORTANCE_DEFAULT
-            val channel = NotificationChannel(CHANNEL_ID, name, importance)
-            channel.description = getString(R.string.channel_desc)
-            val manager = requireActivity().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-            manager.createNotificationChannel(channel)
-        }
+
 
         viewModel.getData().observe(viewLifecycleOwner, {
             myAdapter.updateData(it)

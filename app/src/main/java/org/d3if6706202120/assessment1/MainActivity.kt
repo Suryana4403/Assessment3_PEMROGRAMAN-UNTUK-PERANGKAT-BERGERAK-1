@@ -10,9 +10,14 @@ import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
+import androidx.work.WorkManager
 import org.d3if6706202120.assessment1.ui.main.BangunDatarFragment
 
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        const val CHANNEL_ID = "updater"
+    }
 
 
     private lateinit var navController: NavController
@@ -24,8 +29,17 @@ class MainActivity : AppCompatActivity() {
         navController = findNavController(R.id.myNavHostFragment)
         NavigationUI.setupActionBarWithNavController(this, navController)
 
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val name = getString(R.string.channel_name)
+            val importance = NotificationManager.IMPORTANCE_DEFAULT
+            val channel = NotificationChannel(CHANNEL_ID, name, importance)
+            channel.description = getString(R.string.channel_desc)
+            val manager = getSystemService(Context.NOTIFICATION_SERVICE)
+                    as NotificationManager
+            manager.createNotificationChannel(channel)
+        }
     }
+
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp()
     }

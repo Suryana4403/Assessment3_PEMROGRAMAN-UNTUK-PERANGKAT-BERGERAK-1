@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Assessment2</string>
+    <string name="app_name">Assessment3</string>
     <string name="textHitungLuasPersegi">HITUNG LUAS DAN KELILING PERSEGI PANJANG</string>
     <string name="masukanPanjang">Panjang (cm)</string>
     <string name="masukanLebar">Lebar (cm)</string>
@@ -31,5 +31,5 @@
     <string name="channel_name">Updater</string>
     <string name="channel_desc">Update data Bangun Datar otomatis</string>
     <string name="notif_title">Bangun Datar</string>
-    <string name="notif_text">Hitung bangun Datar...</string>
+    <string name="notif_text">Hitung bangun Datar</string>
 </resources>

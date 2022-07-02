@@ -7,6 +7,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.work.ExistingWorkPolicy
+import androidx.work.OneTimeWorkRequest
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import kotlinx.coroutines.Dispatchers
@@ -44,12 +45,10 @@ class BangunDatarMainViewModel : ViewModel() {
         val request = OneTimeWorkRequestBuilder<UpdateWorker>()
             .setInitialDelay(1, TimeUnit.MINUTES)
             .build()
-        
         WorkManager.getInstance(app).enqueueUniqueWork(
-            BangunDatarFragment.CHANNEL_ID,
+            MainActivity.CHANNEL_ID,
             ExistingWorkPolicy.REPLACE,
             request
         )
     }
-
 }
